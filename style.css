@@ -6,13 +6,13 @@
     font-family: 'Avenir Next LT Pro';
     font-style: normal;
     font-weight: normal;
-    src: local('Avenir Next LT Pro Regular'), url('font/avenir-next-lt-pro/AvenirNextLTPro-Regular.woff') format('woff');
+    src: url('font/avenir-next-lt-pro/AvenirNextLTPro-Regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Avenir Next LT Pro';
     font-style: normal;
     font-weight: bold;
-    src: local('Avenir Next LT Pro Bold'), url('font/avenir-next-lt-pro/AvenirNextLTPro-Bold.woff') format('woff');
+    src: url('font/avenir-next-lt-pro/AvenirNextLTPro-Bold.woff') format('woff');
 }
 body {
     margin: 0 auto;

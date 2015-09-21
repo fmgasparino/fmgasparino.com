@@ -26,6 +26,7 @@ body {
 }
 a {
     color: #144563;
+    text-decoration: none;
 }
 .init-transition {
     -webkit-transition: all 1.5s ease;
@@ -138,6 +139,5 @@ a {
     .vancouver {
         width: 100%;
         margin-left: 0;
-        left: 0;
     }
 }

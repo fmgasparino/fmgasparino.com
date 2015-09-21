@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Felipe Gasparino - Me</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="animate.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="init-transition">
+
+    <div class="logo-text init-transition logo-text-before-animation">
+        <span>FELIPE</span>
+        <span class="logo-gasparino">GASPARINO</span>
+    </div>
+    <!--<img class="logo" src="felipe-logo.svg" alt="Felipe Gasparino" />-->
+    <p class="title animation1">Mobile Lead Developer <a href="http://jostle.me" target="_blank">@Jostle</a></p>
+
+    <p class="mission animation1">I am a <b>Technology Enthusiast</b> committed to crafting great experiences for customers through Software <b>Design</b> & <b>Development</b></div>
+
+        <div class="channelsButtons">
+            <a href="https://ca.linkedin.com/in/fmgasparino" target="_blank">
+                <img class="channelButton" src="images/linkedin.png" />
+            </a>
+            <a href="https://twitter.com/fmgasparino" target="_blank">
+                <img class="channelButton" src="images/twitter.png" />
+            </a>
+            <a href="https://github.com/fmgasparino" target="_blank">
+                <img class="channelButton" src="images/github.png" />
+            </a>
+            <a href="https://instagram.com/fmgasparino/" target="_blank">
+                <img class="channelButton" src="images/instagram.png" />
+            </a>
+        </div>
+
+        <img class="vancouver animation1" src="images/vancouver-skyline-2.png" />
+
+        <!-- Attach jQuery library -->
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+        <script>
+            jQuery(function($) {
+                var transitionDelay = 1000;
+                $('body').css("background-color", "white");
+                $('.logo-text').removeClass("logo-text-before-animation");
+                $('.animation1').delay(transitionDelay).fadeIn(transitionDelay);
+                //$('.channelButton').delay(1800).fadeIn(1000);
+                var transitionPerItem = 0;
+                $('.channelButton').each(function(index) {
+                    transitionPerItem += 400;
+                    var currentDelay = transitionDelay + transitionPerItem;
+                    $(this).delay(currentDelay).fadeIn(transitionDelay);
+                    //                    var e = $(this);
+                    //                    e.delay(currentDelay).not(':animated').css({
+                    //                        'opacity': 1
+                    //                    }).effect("scale", {
+                    //                        origin: ['middle', 'center'],
+                    //                        from: {
+                    //                            width: e.width() / 2,
+                    //                            height: e.height() / 2
+                    //                        },
+                    //                        percent: 100,
+                    //                        direction: 'both',
+                    //                        easing: "easeOutBounce"
+                    //                    }, 1000);
+                });
+            });
+
+        </script>
+
+</body>
+
+</html>

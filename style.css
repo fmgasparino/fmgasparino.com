@@ -1,0 +1,136 @@
+@font-face {
+    font-family: anders;
+    src: url(font/Anders.ttf);
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir Next LT Pro Regular'), url('font/avenir-next-lt-pro/AvenirNextLTPro-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Avenir Next LT Pro Bold'), url('font/avenir-next-lt-pro/AvenirNextLTPro-Bold.woff') format('woff');
+}
+body {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    font-family: 'Avenir Next LT Pro';
+    color: #333333;
+    background: url(images/felipe-circuit.png);
+    background-repeat: repeat;
+    background-color: #144563;
+}
+a {
+    color: #144563;
+}
+.init-transition {
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+.logo {
+    width: 500px;
+    text-align: center;
+    margin: 25px 0 5px -250px;
+    position: relative;
+    left: 50%;
+}
+.logo-text-before-animation {
+    top: 50% !important;
+    margin-top: -70px !important;
+    color: white !important;
+}
+.logo-text {
+    position: absolute;
+    color: #144563;
+    font-size: 40pt;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    top: 15px;
+    left: 0;
+}
+.logo-gasparino {
+    font-family: anders;
+    font-size: 90%;
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin: 0px;
+    padding-top: 85px;
+}
+.mission {
+    text-align: center;
+    padding: 12% 0;
+    font-size: 22px;
+}
+.mission b {
+    color: #144563;
+}
+.channelButton {
+    float: left;
+    width: 15%;
+    margin: 0 5%;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    display: none;
+}
+.channelButton:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+.channelsButtons {
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+    width: 450px;
+}
+.vancouver {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    opacity: 0.7;
+}
+.animation1,
+.animation2 {
+    display: none;
+}
+@media (max-width: 500px) {
+    body {
+        width: 90%;
+    }
+    .logo {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+    .logo-text {
+        font-size: 10vw;
+    }
+    .title {
+        font-size: 20px;
+        left: 0;
+    }
+    .mission {
+        font-size: 18px;
+    }
+    .channelsButtons {
+        margin-left: 0;
+        left: 2%;
+        width: 96%;
+    }
+}
+@media (max-height: 500px) {
+    .vancouver {
+        opacity: 0;
+    }
+}

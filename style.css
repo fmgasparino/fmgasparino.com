@@ -18,7 +18,7 @@ body {
     margin: 0 auto;
     width: 80%;
     max-width: 800px;
-    font-family: 'Avenir Next LT Pro';
+    font-family: 'Avenir Next LT Pro', Helvetica, Arial;
     color: #333333;
     background: url(images/felipe-circuit.png);
     background-repeat: repeat;
@@ -29,10 +29,10 @@ a {
     text-decoration: none;
 }
 .init-transition {
-    -webkit-transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
 }
 .logo {
     width: 500px;
@@ -45,6 +45,7 @@ a {
     top: 50% !important;
     margin-top: -70px !important;
     color: white !important;
+    display: none;
 }
 .logo-text {
     position: absolute;
@@ -139,5 +140,6 @@ a {
     .vancouver {
         width: 100%;
         margin-left: 0;
+        left: 0;
     }
 }

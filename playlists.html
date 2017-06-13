@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <title>Fmgasparino Playlists</title>
-  </head>
-  <body>
-  <iframe src="//tools.applemusic.com/embed/v1/playlist/pl.5b7713b72e93467e83d48b150dbcb065?country=ca" height="500px" width="100%" frameborder="0"></iframe>
-  </body>
+</head>
+<style>
+
+    body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        /*background:*/
+                /*radial-gradient(black 15%, transparent 16%) 0 0,*/
+                /*radial-gradient(black 15%, transparent 16%) 8px 8px,*/
+                /*radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,*/
+                /*radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;*/
+        /*background-color:#282828;*/
+        /*background-size:16px 16px;*/
+        background: url(images/felipe-circuit.png);
+        background-repeat: repeat;
+        background-color: #444444;
+        margin: 0 auto;
+    }
+
+    .main-panel {
+        width: 100%;
+        height: 90%;
+        margin: 100px auto 0;
+        overflow-y: scroll;
+        display: flex;
+    }
+
+    .playlist-panel {
+        width: 75%;
+        height: 80%;
+        margin: 5%;
+    }
+
+    .logo-playlist{
+        color: white !important;
+    }
+
+</style>
+<body>
+<div class="logo-text logo-playlist">
+    <span>FELIPE</span>
+    <span class="logo-gasparino">GASPARINO</span>
+</div>
+<div class="main-panel">
+
+
+    <iframe src="//tools.applemusic.com/embed/v1/playlist/pl.5b7713b72e93467e83d48b150dbcb065?country=ca" class="playlist-panel" frameborder="0"></iframe>
+    <iframe src="//tools.applemusic.com/embed/v1/playlist/pl.a04ed16b1ac1414483ad2bda50f046e0?country=ca" class="playlist-panel" frameborder="0"></iframe>
+    <iframe src='//tools.applemusic.com/embed/v1/playlist/pl.917521dd566f45528ed210e73139fbe9?country=ca' class="playlist-panel" frameborder=0></iframe>
+
+</div>
+
+</body>
 </html>
